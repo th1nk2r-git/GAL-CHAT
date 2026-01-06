@@ -20,12 +20,8 @@ namespace Client.Service
 
         private NetworkService()
         {
-            string currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            string configPath = Path.Combine(currentDirectory, "config.json");
-            string jsonContent = File.ReadAllText(configPath);
-            var config = JsonSerializer.Deserialize<dynamic>(jsonContent)!;
-            _ip = config.GetProperty("ip").GetString();
-            _port = config.GetProperty("port").GetInt32();
+            _ip = "127.0.0.1";
+            _port = 1234;
         }
 
         public bool Connect()

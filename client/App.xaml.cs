@@ -50,9 +50,9 @@ namespace client
                     Client.Service.Dispatcher.Dispatch(json);
                 }
             });
-            var app = new App();
+
             var loginWindow = new LoginWindow();
-            app.Run(loginWindow);
+            loginWindow.Show();
         }
     }
 }
