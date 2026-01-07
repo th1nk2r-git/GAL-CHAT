@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Client"
         mc:Ignorable="d"
-        Title="RegisterWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="RegisterWindow" Height="450" Width="800" MinHeight="450" MinWidth="800" MaxHeight="450" MaxWidth="800" ResizeMode="CanMinimize">
     <Grid>
-        
+        <TextBox x:Name="UserIDTextBox" HorizontalAlignment="Left" Margin="224,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="432" Height="39" MaxLength="15" FontSize="25" MaxLines="1"/>
+        <Label Content="ID：" HorizontalAlignment="Left" Margin="123,109,0,0" VerticalAlignment="Top" Height="39" Width="72" FontSize="25"/>
+        <TextBox x:Name="PasswordTextBox" HorizontalAlignment="Left" Margin="224,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="432" Height="39" MaxLength="15" FontSize="25" MaxLines="1"/>
+        <Label Content="密码：" HorizontalAlignment="Left" Margin="123,182,0,0" VerticalAlignment="Top" Height="39" Width="72" FontSize="25"/>
+        <TextBox x:Name="UserNameTextBox" HorizontalAlignment="Left" Margin="224,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211" Height="39" MaxLength="15" FontSize="25" MaxLines="1"/>
+        <Label Content="昵称：" HorizontalAlignment="Left" Margin="123,256,0,0" VerticalAlignment="Top" Height="39" Width="72" FontSize="25"/>
+        <ComboBox x:Name="SexComboBox" 
+                  HorizontalAlignment="Left" 
+                  Margin="520,254,0,0" 
+                  VerticalAlignment="Top" 
+                  Width="136" Height="41"
+                  HorizontalContentAlignment="Center"
+                  VerticalContentAlignment="Center"
+                  FontSize="25" 
+                  SelectedIndex="0">
+            <ComboBoxItem>男</ComboBoxItem>
+            <ComboBoxItem>女</ComboBoxItem>
+            <ComboBoxItem>其他</ComboBoxItem>
+        </ComboBox>
+        <Label Content="性别：" HorizontalAlignment="Left" Margin="440,256,0,0" VerticalAlignment="Top" Height="39" Width="72" FontSize="25"/>
+        <Button x:Name="ComfirmButton" Content="确认" HorizontalAlignment="Left" Margin="123,346,0,0" VerticalAlignment="Top" Height="39" Width="110" FontSize="25" Click="ComfirmButton_Click"/>
+        <Button x:Name="ReturnButton" Content="返回" HorizontalAlignment="Left" Margin="546,346,0,0" VerticalAlignment="Top" Height="39" Width="110" FontSize="25" Click="ReturnButton_Click"/>
     </Grid>
 </Window>

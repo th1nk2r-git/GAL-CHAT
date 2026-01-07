@@ -1,7 +1,12 @@
-﻿using System;
+﻿using Client.Service;
+using System;
 using System.Collections.Generic;
+using System.Drawing.Drawing2D;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.Encodings.Web;
+using System.Text.Json;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -13,9 +18,6 @@ using System.Windows.Shapes;
 
 namespace Client
 {
-    /// <summary>
-    /// RegisterWindow.xaml 的交互逻辑
-    /// </summary>
     public partial class RegisterWindow : Window
     {
         public RegisterWindow()
@@ -23,21 +25,79 @@ namespace Client
             InitializeComponent();
         }
 
-        public static (string hash, string salt) HashPassword(string password)
+        [GeneratedRegex("^[a-zA-Z0-9_]{5,15}$")]
+        private static partial Regex UserIdRegex();
+
+        [GeneratedRegex("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{7,15}$")]
+        private static partial Regex PasswordRegex();
+
+        [GeneratedRegex(@"^[a-zA-Z0-9_\u4e00-\u9fa5]{1,15}$")]
+        private static partial Regex UserNameRegex();
+
+        private void ComfirmButton_Click(object sender, RoutedEventArgs e)
         {
-            byte[] salt = RandomNumberGenerator.GetBytes(16);
-            byte[] hash = Rfc2898DeriveBytes.Pbkdf2(
-                password,
-                salt,
-                100000,
-                HashAlgorithmName.SHA256,
-                32
-            );
-            return (
-                Convert.ToBase64String(hash),
-                Convert.ToBase64String(salt)
-            );
+            String inputID = UserIDTextBox.Text;
+            String inputPasswd = PasswordTextBox.Text;
+            String inputName = UserNameTextBox.Text;
+            String inputSex = SexComboBox.Text;
+
+            if (!UserIdRegex().IsMatch(inputID))
+            {
+                MessageBox.Show("用户ID为大小写英文字符、数字、下划线的任意组合\n" +
+                                "用户ID的长度不少于5且不超过15",
+                                "格式错误",
+                                MessageBoxButton.OK,
+                                MessageBoxImage.Error);
+                return;
+            }
+
+            if (!PasswordRegex().IsMatch(inputPasswd))
+            {
+                MessageBox.Show("密码必须包含大小写英文字符、数字\n" +
+                                "密码的长度不少于7且不超过15",
+                                "格式错误",
+                                MessageBoxButton.OK,
+                                MessageBoxImage.Error);
+                return;
+            }
+
+            if (!UserNameRegex().IsMatch(inputName))
+            {
+                MessageBox.Show("昵称不能包含除大小写英文字符、数字、下划线、中文以外的字符\n"+
+                                "昵称的长度不能超过15且昵称不能为空",
+                                "格式错误",
+                                MessageBoxButton.OK,
+                                MessageBoxImage.Error);
+            }
+
+            var jsonObject = new
+            {
+                type = "register",
+                data = new
+                {
+                    user_id = inputID,
+                    user_password = inputPasswd,
+                    user_name = inputName,
+                    user_sex = inputSex
+                }
+            };
+
+            var options = new JsonSerializerOptions
+            {
+                Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+                WriteIndented = false
+            };
+
+            String json = JsonSerializer.Serialize(jsonObject, options);
+            NetworkService.Send(json);
         }
 
+        private void ReturnButton_Click(object sender, RoutedEventArgs e)
+        {
+            var loginWindow = new LoginWindow();
+            
+            loginWindow.Show();
+            this.Close();
+        }
     }
 }

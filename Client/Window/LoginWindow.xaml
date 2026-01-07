@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Client"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="LoginWindow" Height="450" Width="800" MinHeight="450" MinWidth="800" MaxHeight="450" MaxWidth="800" ResizeMode="CanMinimize">
     <Grid>
         <TextBox x:Name="UserIDTextBox" HorizontalAlignment="Left" Margin="216,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="432" Height="39" MaxLength="15" FontSize="25" MaxLines="1"/>

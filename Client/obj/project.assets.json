@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\project\\th1nk2r\\gal-chat\\client\\client.csproj",
-      "projectName": "client",
-      "projectPath": "D:\\project\\th1nk2r\\gal-chat\\client\\client.csproj",
+      "projectUniqueName": "D:\\project\\th1nk2r\\gal-chat\\client\\Client.csproj",
+      "projectName": "Client",
+      "projectPath": "D:\\project\\th1nk2r\\gal-chat\\client\\Client.csproj",
       "packagesPath": "C:\\Users\\th1nk2r\\.nuget\\packages\\",
       "outputPath": "D:\\project\\th1nk2r\\gal-chat\\client\\obj\\",
       "projectStyle": "PackageReference",

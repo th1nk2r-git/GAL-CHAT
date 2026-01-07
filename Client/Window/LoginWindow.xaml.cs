@@ -32,7 +32,9 @@ namespace Client
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
-
+            var registerWindow = new RegisterWindow();
+            registerWindow.Show();
+            this.Close();
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
@@ -52,8 +54,7 @@ namespace Client
 
             if (!PasswordRegex().IsMatch(inputPasswd))
             {
-                MessageBox.Show("格式错误\n" +
-                                "密码必须包含大小写英文字符、数字\n" +
+                MessageBox.Show("密码必须包含大小写英文字符、数字\n" +
                                 "密码的长度不少于7且不超过15",
                                 "格式错误",
                                 MessageBoxButton.OK,
@@ -66,12 +67,12 @@ namespace Client
                 type = "login",
                 data = new
                 {
-                    userID = inputID,
-                    password = inputPasswd
+                    user_id = inputID,
+                    user_password = inputPasswd
                 }
             };
             String json = JsonSerializer.Serialize(jsonObject);
-            NetworkService.Instance.Send(json);
+            NetworkService.Send(json);
         }
     }
 }

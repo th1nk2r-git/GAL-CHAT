@@ -1,4 +1,7 @@
-﻿using System.Net;
+﻿using MySql.Data;
+using MySql.Data.MySqlClient;
+using Server.Service;
+using System.Net;
 using System.Net.Sockets;
 using System.Text;
 
@@ -6,8 +9,8 @@ namespace Server
 {
     internal class Program
     {
-
-        async static Task HandleClientAsync(Socket client)
+        // 异步处理客户端的请求
+        async static private Task HandleClientAsync(Socket client)
         {
             try
             {
@@ -28,7 +31,7 @@ namespace Server
                         }
 
                         int dataLength = IPAddress.NetworkToHostOrder(BitConverter.ToInt32(lengthBuffer, 0));
-                        if (dataLength <= 0 || dataLength > 1024 * 1024) // 添加合理的最大值限制
+                        if (dataLength <= 0 || dataLength > 1024 * 1024)
                         {
                             Console.WriteLine($"Invalid message length: {dataLength}");
                             return;
@@ -42,10 +45,10 @@ namespace Server
                             totalRead += read;
                         }
                         String message = Encoding.UTF8.GetString(dataBuffer);
-
-
-
                         Console.WriteLine($"Received message: {message}");
+
+                        String reply = Dispatcher.Dispatch(client, message);
+                        
                     }
                 }
             }
@@ -64,27 +67,25 @@ namespace Server
                 client?.Close();
             }
         }
+    
 
-        static async Task Main(String[] args)
+        static async Task Main()
         {
-            // 初始化服务器参数
-            Socket socket = new(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            ushort port = 1234;
-            if(args.Length == 1)
+            // 连接Mysql数据库
+            try
             {
-                if(!ushort.TryParse(args[0], out port))
-                {
-                    Console.WriteLine("Invalid port number.");
-                    return;
-                }
+                MysqlService.ConnectToDB("180.160.173.240", "241310422", "GALCHAT", "3306", "241310422");
             }
-            if (args.Length > 1)
+            catch (Exception ex)
             {
-                Console.WriteLine("Usage: Server [port]");
+                Console.WriteLine("Failed to connect to Mysql: " + ex.Message);
                 return;
             }
+            Console.WriteLine("Connected to Mysql");
 
             // 启动服务器
+            Socket socket = new(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            ushort port = 1234;
             try
             {
                 socket.Bind(new System.Net.IPEndPoint(System.Net.IPAddress.Any, port));
@@ -95,10 +96,9 @@ namespace Server
                 Console.WriteLine("Failed to start server: " + ex.Message);
                 return;
             }
-
             Console.WriteLine("Server is running on " + port + "……");
 
-            // 用于停止服务器的令牌
+            // 设置停止服务器的令牌
             var cts = new CancellationTokenSource();
             Console.CancelKeyPress += (s, e) =>
             {

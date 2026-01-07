@@ -7,24 +7,15 @@ using System.Windows;
 
 namespace Client.Service
 {
-    internal class NetworkService
+    static internal class NetworkService
     {
-        private readonly String _ip;
-        private readonly int _port;
+        static private readonly String _ip = "127.0.0.1";
+        static private readonly int _port = 1234;
 
-        private readonly Socket _socket = new(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-        public Socket Socket { get { return _socket; } }
+        static private readonly Socket _socket = new(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+        static internal Socket Socket { get { return _socket; } }
 
-        static private readonly NetworkService _instance = new ();
-        static public NetworkService Instance { get { return _instance; } }
-
-        private NetworkService()
-        {
-            _ip = "127.0.0.1";
-            _port = 1234;
-        }
-
-        public bool Connect()
+        static internal bool Connect()
         {
             try
             {
@@ -37,7 +28,7 @@ namespace Client.Service
             }
         }
 
-        public void Send(String json)
+        static internal void Send(String json)
         {
             try
             {
@@ -59,7 +50,7 @@ namespace Client.Service
                 });
             }
         }
-        public void Close()
+        static internal void Close()
         {
             _socket.Close();
         }

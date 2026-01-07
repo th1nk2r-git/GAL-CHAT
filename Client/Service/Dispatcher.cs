@@ -5,11 +5,11 @@ using System.Text.Json;
 
 namespace Client.Service
 {
-    class Dispatcher
+    static internal class Dispatcher
     {
-        static public void Dispatch(String jsonString)
+        static internal void Dispatch(String json)
         {
-            var message = JsonSerializer.Deserialize<dynamic>(jsonString)!;
+            var message = JsonSerializer.Deserialize<dynamic>(json)!;
             string type = message.GetProperty("type").GetString()!;
             string status = message.GetProperty("status").GetString()!;
             switch (type)

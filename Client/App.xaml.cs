@@ -14,14 +14,14 @@ namespace client
     {
         private void Main(object sender, StartupEventArgs e)
         {
-            if (NetworkService.Instance.Connect() == false)
+            if (NetworkService.Connect() == false)
             {
                 MessageBox.Show("无法连接到服务器", "连接错误", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
             Task.Run(() =>
             {
-                Socket socket = NetworkService.Instance.Socket;
+                Socket socket = NetworkService.Socket;
                 while (true)
                 {
                     byte[] lengthBuffer = new byte[4];
