@@ -1,4 +1,5 @@
 ﻿using Client.Service;
+using HandyControl.Data;
 using System;
 using System.Collections.Generic;
 using System.Drawing.Drawing2D;
@@ -43,36 +44,45 @@ namespace Client
 
             if (!UserIdRegex().IsMatch(inputID))
             {
-                MessageBox.Show(
-                    "用户ID为大小写英文字符、数字、下划线的任意组合\n" +
-                    "用户ID的长度不少于5且不超过15",
-                    "格式错误",
-                    MessageBoxButton.OK,
-                    MessageBoxImage.Error
+                HandyControl.Controls.Growl.Error(
+                    new GrowlInfo
+                    {
+                        Message = "用户ID为大小写英文字符、数字、下划线的任意组合\n" +
+                                  "用户ID的长度不少于5且不超过15",
+
+                        WaitTime = 1,
+                        IsCustom = true
+                    }
                 );
                 return;
             }
 
             if (!PasswordRegex().IsMatch(inputPasswd))
             {
-                MessageBox.Show(
-                    "密码必须包含大小写英文字符、数字\n" +
-                    "密码的长度不少于7且不超过15",
-                    "格式错误",
-                    MessageBoxButton.OK,
-                    MessageBoxImage.Error
+                HandyControl.Controls.Growl.Error(
+                    new GrowlInfo
+                    {
+                        Message = "密码必须包含大小写英文字符、数字\n" +
+                                  "密码的长度不少于7且不超过15",
+
+                        WaitTime = 1,
+                        IsCustom = true
+                    }
                 );
                 return;
             }
 
             if (!UserNameRegex().IsMatch(inputName))
             {
-                MessageBox.Show(
-                    "昵称不能包含除大小写英文字符、数字、下划线、中文以外的字符\n"+
-                    "昵称的长度不能超过15且昵称不能为空",
-                    "格式错误",
-                    MessageBoxButton.OK,
-                    MessageBoxImage.Error
+                HandyControl.Controls.Growl.Error(
+                    new GrowlInfo
+                    {
+                        Message = "昵称不能包含除大小写英文字符、数字、下划线、中文以外的字符\n" +
+                                  "昵称的长度不能超过15且昵称不能为空",
+
+                        WaitTime = 1,
+                        IsCustom = true
+                    }
                 );
             }
 

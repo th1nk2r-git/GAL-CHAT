@@ -4,15 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Client"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="Gal-Chat" Height="450" Width="800" MinHeight="450" MinWidth="800" MaxHeight="450" MaxWidth="800" ResizeMode="CanMinimize">
     <Grid>
-        <TextBox x:Name="UserIDTextBox" HorizontalAlignment="Left" Margin="216,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="432" Height="39" MaxLength="15" FontSize="25" MaxLines="1"/>
-        <PasswordBox x:Name="PasswordTextBox" HorizontalAlignment="Left" Margin="216,215,0,0" VerticalAlignment="Top" Width="432" Height="39" FontSize="25" MaxLength="15" Password=""/>
-        <Button x:Name="LoginButton" Content="登录" HorizontalAlignment="Left" Margin="131,326,0,0" VerticalAlignment="Top" Height="39" Width="110" FontSize="25" Click="LoginButton_Click"/>
-        <Button x:Name="RegisterButton" Content="注册" HorizontalAlignment="Left" Margin="538,326,0,0" VerticalAlignment="Top" Height="39" Width="110" FontSize="25" Click="RegisterButton_Click"/>
-        <Label Content="密码：" HorizontalAlignment="Left" Margin="131,215,0,0" VerticalAlignment="Top" Height="39" Width="72" FontSize="25"/>
-        <Label Content="ID：" HorizontalAlignment="Left" Margin="131,119,0,0" VerticalAlignment="Top" Height="39" Width="72" FontSize="25"/>
+        <TextBox Style="{StaticResource TextBoxExtend}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="用户：" x:Name="UserIDTextBox" HorizontalAlignment="Left" Margin="131,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="517" Height="39" MaxLength="15" FontSize="25" MaxLines="1"/>
+        <PasswordBox Style="{DynamicResource PasswordBoxExtend}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Placeholder="请输入密码" hc:TitleElement.Title="密码：" x:Name="PasswordTextBox" HorizontalAlignment="Left" Margin="131,215,0,0" VerticalAlignment="Top" Width="517" Height="39" FontSize="25" MaxLength="15" Password=""/>
+        <Button Style="{StaticResource ButtonPrimary}" hc:BorderElement.CornerRadius="15" x:Name="LoginButton" Content="登录" HorizontalAlignment="Left" Margin="131,326,0,0" VerticalAlignment="Top" Height="39" Width="110" FontSize="25" Click="LoginButton_Click"/>
+        <Button Style="{StaticResource ButtonPrimary}" hc:BorderElement.CornerRadius="15" x:Name="RegisterButton" Content="注册" HorizontalAlignment="Left" Margin="538,326,0,0" VerticalAlignment="Top" Height="39" Width="110" FontSize="25" Click="RegisterButton_Click"/>
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Right">
+            <StackPanel hc:Growl.GrowlParent="True" VerticalAlignment="Top" Margin="0,10,10,10"/>
+        </ScrollViewer>
     </Grid>
 </Window>

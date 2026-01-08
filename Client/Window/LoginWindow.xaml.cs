@@ -14,6 +14,7 @@ using System.Text.RegularExpressions;
 using System.Text.Json;
 using System.Net;
 using Client.Service;
+using HandyControl.Data;
 
 namespace Client
 {
@@ -38,22 +39,26 @@ namespace Client
 
             if (inputID.IsWhiteSpace())
             {
-                MessageBox.Show(
-                    "用户ID不能为空\n",
-                    "格式错误",
-                    MessageBoxButton.OK,
-                    MessageBoxImage.Error
+                HandyControl.Controls.Growl.Error(
+                    new GrowlInfo
+                    {
+                        Message = "用户ID不能为空",
+                        WaitTime = 1,
+                        IsCustom = true
+                    }
                 );
                 return;
             }
 
             if (inputPasswd.IsWhiteSpace())
             {
-                MessageBox.Show(
-                    "密码不能为空\n",
-                    "格式错误",
-                    MessageBoxButton.OK,
-                    MessageBoxImage.Error
+                HandyControl.Controls.Growl.Error(
+                    new GrowlInfo
+                    {
+                        Message = "密码不能为空",
+                        WaitTime = 1,
+                        IsCustom = true
+                    }
                 );
                 return;
             }

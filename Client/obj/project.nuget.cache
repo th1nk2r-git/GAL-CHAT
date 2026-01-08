@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tROoAeE6qlk=",
+  "dgSpecHash": "HYa6ZhTXE6w=",
   "success": true,
   "projectFilePath": "D:\\project\\th1nk2r\\gal-chat\\client\\Client.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\th1nk2r\\.nuget\\packages\\handycontrol\\3.5.1\\handycontrol.3.5.1.nupkg.sha512"
+  ],
   "logs": []
 }

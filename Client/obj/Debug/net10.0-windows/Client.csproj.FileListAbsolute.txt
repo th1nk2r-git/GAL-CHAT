@@ -21,3 +21,7 @@ D:\project\th1nk2r\gal-chat\client\obj\Debug\net10.0-windows\Window\RegisterWind
 D:\project\th1nk2r\gal-chat\client\obj\Debug\net10.0-windows\Window\LoginWindow.baml
 D:\project\th1nk2r\gal-chat\client\obj\Debug\net10.0-windows\Window\RegisterWindow.baml
 D:\project\th1nk2r\gal-chat\client\obj\Debug\net10.0-windows\Client.sourcelink.json
+D:\project\th1nk2r\gal-chat\client\bin\Debug\net10.0-windows\HandyControl.dll
+D:\project\th1nk2r\gal-chat\client\obj\Debug\net10.0-windows\Client.csproj.AssemblyReference.cache
+D:\project\th1nk2r\gal-chat\client\obj\Debug\net10.0-windows\App.baml
+D:\project\th1nk2r\gal-chat\client\obj\Debug\net10.0-windows\Client.csproj.Up2Date

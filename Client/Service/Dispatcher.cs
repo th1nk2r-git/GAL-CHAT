@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HandyControl.Data;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Text.Json;
@@ -44,11 +45,12 @@ namespace Client.Service
             String message = packet.GetProperty("data").GetProperty("message").GetString()!;
             Application.Current.Dispatcher.Invoke(() =>
             {
-                MessageBox.Show(
-                    "喵",
-                    "登录成功",
-                    MessageBoxButton.OK,
-                    MessageBoxImage.Information
+                HandyControl.Controls.Growl.Success(
+                    new GrowlInfo
+                    {
+                        Message = message,
+                        WaitTime = 1,
+                    }
                 );
             });
         }
@@ -59,11 +61,13 @@ namespace Client.Service
             String message = packet.GetProperty("data").GetProperty("message").GetString()!;
             Application.Current.Dispatcher.Invoke(() =>
             {
-                MessageBox.Show(
-                    message, 
-                    "登录失败", 
-                    MessageBoxButton.OK, 
-                    MessageBoxImage.Error
+                HandyControl.Controls.Growl.Error(
+                    new GrowlInfo
+                    {
+                        Message = message,
+                        WaitTime = 1,
+                        IsCustom = true
+                    }
                 );
             });
         }
@@ -74,11 +78,12 @@ namespace Client.Service
             Application.Current.Dispatcher.Invoke(() =>
             {
                 String message = packet.GetProperty("data").GetProperty("message").GetString()!;
-                MessageBox.Show(
-                    message,
-                    "注册成功",
-                    MessageBoxButton.OK,
-                    MessageBoxImage.Information
+                HandyControl.Controls.Growl.Success(
+                    new GrowlInfo
+                    {
+                        Message = message,
+                        WaitTime = 1,
+                    }
                 );
                 RegisterWindow registerWindow = Application.Current.Windows.OfType<RegisterWindow>().FirstOrDefault()!;
                 var loginWindow = new LoginWindow();
@@ -93,11 +98,13 @@ namespace Client.Service
             String message = packet.GetProperty("data").GetProperty("message").GetString()!;
             Application.Current.Dispatcher.Invoke(() =>
             {
-                MessageBox.Show(
-                    message,
-                    "注册失败",
-                    MessageBoxButton.OK,
-                    MessageBoxImage.Error
+                HandyControl.Controls.Growl.Error(
+                    new GrowlInfo
+                    {
+                        Message = message,
+                        WaitTime = 1,
+                        IsCustom = true
+                    }
                 );
             });
         }

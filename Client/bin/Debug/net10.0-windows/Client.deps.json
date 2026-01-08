@@ -7,8 +7,19 @@
   "targets": {
     ".NETCoreApp,Version=v10.0": {
       "Client/1.0.0": {
+        "dependencies": {
+          "HandyControl": "3.5.1"
+        },
         "runtime": {
           "Client.dll": {}
+        }
+      },
+      "HandyControl/3.5.1": {
+        "runtime": {
+          "lib/net8.0/HandyControl.dll": {
+            "assemblyVersion": "3.5.1.0",
+            "fileVersion": "3.5.1.0"
+          }
         }
       }
     }
@@ -18,6 +29,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "HandyControl/3.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i2i0xrLev7F1MFnhf0DP1CNCdGw8hVJ0HJrI0kxRv02ZJgaAzLzDTgAXDPY8GAoD3aYnBLSgM74lBHZ844KQnQ==",
+      "path": "handycontrol/3.5.1",
+      "hashPath": "handycontrol.3.5.1.nupkg.sha512"
     }
   }
 }
