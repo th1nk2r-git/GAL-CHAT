@@ -2,6 +2,7 @@
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Windows;
 
@@ -14,6 +15,13 @@ namespace Client.Service
 
         static private readonly Socket _socket = new(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         static internal Socket Socket { get { return _socket; } }
+
+        static private readonly JsonSerializerOptions options = new()
+        {
+            Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+            WriteIndented = false
+        };
+        static internal JsonSerializerOptions Options { get { return options; } }
 
         static internal bool Connect()
         {
@@ -28,18 +36,19 @@ namespace Client.Service
             }
         }
 
-        static internal void Send(String json)
+        static internal void Send(dynamic packet)
         {
+            string json = JsonSerializer.Serialize(packet, options);
             try
             {
                 byte[] data = Encoding.UTF8.GetBytes(json);
                 byte[] lengthPrefix = BitConverter.GetBytes(IPAddress.HostToNetworkOrder(data.Length));
 
-                byte[] packet = new byte[4 + data.Length];
-                Buffer.BlockCopy(lengthPrefix, 0, packet, 0, 4);
-                Buffer.BlockCopy(data, 0, packet, 4, data.Length);
+                byte[] buffer = new byte[4 + data.Length];
+                Buffer.BlockCopy(lengthPrefix, 0, buffer, 0, 4);
+                Buffer.BlockCopy(data, 0, buffer, 4, data.Length);
 
-                _socket.Send(packet);
+                _socket.Send(buffer);
             }
             catch (Exception ex)
             {

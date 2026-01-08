@@ -1,33 +1,33 @@
-﻿using System;
+﻿using Google.Protobuf.WellKnownTypes;
+using System;
 using System.Collections.Generic;
+using System.Net.Sockets;
 using System.Text;
 using System.Text.Json;
-using System.Net.Sockets;
 
 namespace Server.Service
 {
     internal class Dispatcher
     {
-        static internal String Dispatch(Socket client, String json)
+        // 将消息分发到相应的服务处理函数
+        static internal void Dispatch(Socket client, dynamic packet)
         {
-            var message = JsonSerializer.Deserialize<dynamic>(json)!;
-            string type = message.GetProperty("type").GetString()!;
-            String reply = "";
+            string type = packet.GetProperty("type").GetString()!;
             switch (type)
             {
                 case "login":
-                    UserService.HandleUserLogin(client, json);
+                    UserService.HandleUserLogin(client, packet);
                     break;
 
                 case "register":
-                    UserService.HandleUserRegister(client, json);
+                    UserService.HandleUserRegister(client, packet);
                     break;
 
                 default:
-                    Console.WriteLine($"Unknown Message: {json}");
+                    var json = JsonSerializer.Serialize(packet, NetworkService.Options);
+                    Console.WriteLine($"Unknown packet: {json}");
                     break;
             }
-            return reply;
         }
     }
 }

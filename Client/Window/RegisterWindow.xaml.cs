@@ -43,53 +43,51 @@ namespace Client
 
             if (!UserIdRegex().IsMatch(inputID))
             {
-                MessageBox.Show("用户ID为大小写英文字符、数字、下划线的任意组合\n" +
-                                "用户ID的长度不少于5且不超过15",
-                                "格式错误",
-                                MessageBoxButton.OK,
-                                MessageBoxImage.Error);
+                MessageBox.Show(
+                    "用户ID为大小写英文字符、数字、下划线的任意组合\n" +
+                    "用户ID的长度不少于5且不超过15",
+                    "格式错误",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                );
                 return;
             }
 
             if (!PasswordRegex().IsMatch(inputPasswd))
             {
-                MessageBox.Show("密码必须包含大小写英文字符、数字\n" +
-                                "密码的长度不少于7且不超过15",
-                                "格式错误",
-                                MessageBoxButton.OK,
-                                MessageBoxImage.Error);
+                MessageBox.Show(
+                    "密码必须包含大小写英文字符、数字\n" +
+                    "密码的长度不少于7且不超过15",
+                    "格式错误",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                );
                 return;
             }
 
             if (!UserNameRegex().IsMatch(inputName))
             {
-                MessageBox.Show("昵称不能包含除大小写英文字符、数字、下划线、中文以外的字符\n"+
-                                "昵称的长度不能超过15且昵称不能为空",
-                                "格式错误",
-                                MessageBoxButton.OK,
-                                MessageBoxImage.Error);
+                MessageBox.Show(
+                    "昵称不能包含除大小写英文字符、数字、下划线、中文以外的字符\n"+
+                    "昵称的长度不能超过15且昵称不能为空",
+                    "格式错误",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                );
             }
 
-            var jsonObject = new
+            var packet = new
             {
                 type = "register",
                 data = new
                 {
-                    user_id = inputID,
-                    user_password = inputPasswd,
-                    user_name = inputName,
-                    user_sex = inputSex
+                    id = inputID,
+                    password = inputPasswd,
+                    name = inputName,
+                    sex = inputSex
                 }
             };
-
-            var options = new JsonSerializerOptions
-            {
-                Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
-                WriteIndented = false
-            };
-
-            String json = JsonSerializer.Serialize(jsonObject, options);
-            NetworkService.Send(json);
+            NetworkService.Send(packet);
         }
 
         private void ReturnButton_Click(object sender, RoutedEventArgs e)

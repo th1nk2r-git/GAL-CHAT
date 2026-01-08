@@ -4,6 +4,7 @@ using Server.Service;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Text.Json;
 
 namespace Server
 {
@@ -33,22 +34,22 @@ namespace Server
                         int dataLength = IPAddress.NetworkToHostOrder(BitConverter.ToInt32(lengthBuffer, 0));
                         if (dataLength <= 0 || dataLength > 1024 * 1024)
                         {
-                            Console.WriteLine($"Invalid message length: {dataLength}");
+                            Console.WriteLine($"Invalid packet length: {dataLength}");
                             return;
                         }
 
-                        byte[] dataBuffer = new byte[dataLength];
+                        byte[] buffer = new byte[dataLength];
                         totalRead = 0;
                         while (totalRead < dataLength)
                         {
-                            int read = await client.ReceiveAsync(dataBuffer.AsMemory(totalRead, dataLength - totalRead), SocketFlags.None);
+                            int read = await client.ReceiveAsync(buffer.AsMemory(totalRead, dataLength - totalRead), SocketFlags.None);
                             totalRead += read;
                         }
-                        String message = Encoding.UTF8.GetString(dataBuffer);
-                        Console.WriteLine($"Received message: {message}");
+                        String json = Encoding.UTF8.GetString(buffer);
+                        Console.WriteLine($"Received packet: {json}");
 
-                        String reply = Dispatcher.Dispatch(client, message);
-                        
+                        var packet = JsonSerializer.Deserialize<dynamic>(json)!;
+                        Dispatcher.Dispatch(client, packet);
                     }
                 }
             }

@@ -38,16 +38,17 @@ namespace client
 
                     int dataLength = IPAddress.NetworkToHostOrder(BitConverter.ToInt32(lengthBuffer, 0));
 
-                    byte[] dataBuffer = new byte[dataLength];
+                    byte[] buffer = new byte[dataLength];
                     totalRead = 0;
                     while (totalRead < dataLength)
                     {
-                        int read = socket.Receive(dataBuffer, totalRead, dataLength - totalRead, SocketFlags.None);
+                        int read = socket.Receive(buffer, totalRead, dataLength - totalRead, SocketFlags.None);
                         totalRead += read;
                     }
 
-                    String json =  Encoding.UTF8.GetString(dataBuffer);
-                    Client.Service.Dispatcher.Dispatch(json);
+                    String json =  Encoding.UTF8.GetString(buffer);
+                    var packet = JsonSerializer.Deserialize<dynamic>(json)!;
+                    Client.Service.Dispatcher.Dispatch(packet);
                 }
             });
 

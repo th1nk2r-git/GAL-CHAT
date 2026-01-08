@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\project\\th1nk2r\\gal-chat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\window\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\window\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\service\\dispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\service\\dispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\window\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\window\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\service\\networkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\service\\networkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|d:\\project\\th1nk2r\\gal-chat\\server\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|d:\\project\\th1nk2r\\gal-chat\\server\\service\\networkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,28 +23,20 @@
       "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\service\\mysqlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|d:\\project\\th1nk2r\\gal-chat\\server\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\window\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\window\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|d:\\project\\th1nk2r\\gal-chat\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\service\\networkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\service\\networkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|d:\\project\\th1nk2r\\gal-chat\\server\\service\\dispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\service\\dispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\service\\dispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\service\\dispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|d:\\project\\th1nk2r\\gal-chat\\server\\service\\dispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\service\\dispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\window\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\window\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\window\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -49,6 +45,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\window\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\window\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|d:\\project\\th1nk2r\\gal-chat\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,128 +58,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NetworkService.cs",
-              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Server\\Service\\NetworkService.cs",
-              "RelativeDocumentMoniker": "Server\\Service\\NetworkService.cs",
-              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Server\\Service\\NetworkService.cs",
-              "RelativeToolTip": "Server\\Service\\NetworkService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T11:14:22.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MysqlService.cs",
-              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Server\\Service\\MysqlService.cs",
-              "RelativeDocumentMoniker": "Server\\Service\\MysqlService.cs",
-              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Server\\Service\\MysqlService.cs",
-              "RelativeToolTip": "Server\\Service\\MysqlService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwEAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T09:59:47.463Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Server\\Program.cs",
-              "RelativeDocumentMoniker": "Server\\Program.cs",
-              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Server\\Program.cs",
-              "RelativeToolTip": "Server\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-06T15:34:32.079Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Dispatcher.cs",
-              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Client\\Service\\Dispatcher.cs",
-              "RelativeDocumentMoniker": "Client\\Service\\Dispatcher.cs",
-              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Client\\Service\\Dispatcher.cs",
-              "RelativeToolTip": "Client\\Service\\Dispatcher.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-06T15:29:07.004Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "NetworkService.cs",
-              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Client\\Service\\NetworkService.cs",
-              "RelativeDocumentMoniker": "Client\\Service\\NetworkService.cs",
-              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Client\\Service\\NetworkService.cs",
-              "RelativeToolTip": "Client\\Service\\NetworkService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-06T03:48:36.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "LoginWindow.xaml.cs",
               "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Client\\Window\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "Client\\Window\\LoginWindow.xaml.cs",
               "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Client\\Window\\LoginWindow.xaml.cs",
               "RelativeToolTip": "Client\\Window\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAWwEsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-06T13:17:03.866Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RegisterWindow.xaml.cs",
-              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Client\\Window\\RegisterWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Client\\Window\\RegisterWindow.xaml.cs",
-              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Client\\Window\\RegisterWindow.xaml.cs*",
-              "RelativeToolTip": "Client\\Window\\RegisterWindow.xaml.cs*",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAWwFsAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T08:21:40.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "Dispatcher.cs",
               "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Server\\Service\\Dispatcher.cs",
               "RelativeDocumentMoniker": "Server\\Service\\Dispatcher.cs",
               "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Server\\Service\\Dispatcher.cs",
               "RelativeToolTip": "Server\\Service\\Dispatcher.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAADgvxIAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-07T10:59:16.123Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Server\\Service\\UserService.cs",
-              "RelativeDocumentMoniker": "Server\\Service\\UserService.cs",
-              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Server\\Service\\UserService.cs",
-              "RelativeToolTip": "Server\\Service\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "NetworkService.cs",
+              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Server\\Service\\NetworkService.cs",
+              "RelativeDocumentMoniker": "Server\\Service\\NetworkService.cs",
+              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Server\\Service\\NetworkService.cs",
+              "RelativeToolTip": "Server\\Service\\NetworkService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T11:03:08.382Z",
+              "WhenOpened": "2026-01-07T11:14:22.616Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             },
             {
               "$type": "Document",
@@ -189,14 +107,66 @@
               "RelativeDocumentMoniker": "Client\\App.xaml.cs",
               "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Client\\App.xaml.cs",
               "RelativeToolTip": "Client\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAArwB4AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-06T01:32:08.851Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
+              "Title": "MysqlService.cs",
+              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Server\\Service\\MysqlService.cs",
+              "RelativeDocumentMoniker": "Server\\Service\\MysqlService.cs",
+              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Server\\Service\\MysqlService.cs",
+              "RelativeToolTip": "Server\\Service\\MysqlService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T09:59:47.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Server\\Service\\UserService.cs",
+              "RelativeDocumentMoniker": "Server\\Service\\UserService.cs",
+              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Server\\Service\\UserService.cs",
+              "RelativeToolTip": "Server\\Service\\UserService.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAawGcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T11:03:08.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NetworkService.cs",
+              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Client\\Service\\NetworkService.cs",
+              "RelativeDocumentMoniker": "Client\\Service\\NetworkService.cs",
+              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Client\\Service\\NetworkService.cs",
+              "RelativeToolTip": "Client\\Service\\NetworkService.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAYwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T03:48:36.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dispatcher.cs",
+              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Client\\Service\\Dispatcher.cs",
+              "RelativeDocumentMoniker": "Client\\Service\\Dispatcher.cs",
+              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Client\\Service\\Dispatcher.cs",
+              "RelativeToolTip": "Client\\Service\\Dispatcher.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwDIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T15:29:07.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Client\\Window\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "Client\\Window\\LoginWindow.xaml",
@@ -208,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "RegisterWindow.xaml",
               "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Client\\Window\\RegisterWindow.xaml",
               "RelativeDocumentMoniker": "Client\\Window\\RegisterWindow.xaml",
@@ -216,6 +186,36 @@
               "RelativeToolTip": "Client\\Window\\RegisterWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-01-07T08:30:02.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegisterWindow.xaml.cs",
+              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Client\\Window\\RegisterWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Client\\Window\\RegisterWindow.xaml.cs",
+              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Client\\Window\\RegisterWindow.xaml.cs",
+              "RelativeToolTip": "Client\\Window\\RegisterWindow.xaml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAxwFoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T08:21:40.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Server\\Program.cs",
+              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Server\\Program.cs",
+              "RelativeToolTip": "Server\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwDMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T15:34:32.079Z",
               "EditorCaption": ""
             }
           ]

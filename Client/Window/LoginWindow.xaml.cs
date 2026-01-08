@@ -24,12 +24,6 @@ namespace Client
             InitializeComponent();
         }
 
-        [GeneratedRegex("^[a-zA-Z0-9_]{5,15}$")]
-        private static partial Regex UserIdRegex();
-
-        [GeneratedRegex("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{7,15}$")]
-        private static partial Regex PasswordRegex();
-
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
             var registerWindow = new RegisterWindow();
@@ -42,37 +36,38 @@ namespace Client
             String inputID = UserIDTextBox.Text;
             String inputPasswd = PasswordTextBox.Password;
 
-            if (!UserIdRegex().IsMatch(inputID))
+            if (inputID.IsWhiteSpace())
             {
-                MessageBox.Show("用户ID为大小写英文字符、数字、下划线的任意组合\n" +
-                                "用户ID的长度不少于5且不超过15",
-                                "格式错误",
-                                MessageBoxButton.OK,
-                                MessageBoxImage.Error);
+                MessageBox.Show(
+                    "用户ID不能为空\n",
+                    "格式错误",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                );
                 return;
             }
 
-            if (!PasswordRegex().IsMatch(inputPasswd))
+            if (inputPasswd.IsWhiteSpace())
             {
-                MessageBox.Show("密码必须包含大小写英文字符、数字\n" +
-                                "密码的长度不少于7且不超过15",
-                                "格式错误",
-                                MessageBoxButton.OK,
-                                MessageBoxImage.Error);
+                MessageBox.Show(
+                    "密码不能为空\n",
+                    "格式错误",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                );
                 return;
             }
 
-            var jsonObject = new
+            var packet = new
             {
                 type = "login",
                 data = new
                 {
-                    user_id = inputID,
-                    user_password = inputPasswd
+                    id = inputID,
+                    password = inputPasswd
                 }
             };
-            String json = JsonSerializer.Serialize(jsonObject);
-            NetworkService.Send(json);
+            NetworkService.Send(packet);
         }
     }
 }
