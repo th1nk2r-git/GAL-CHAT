@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\project\\th1nk2r\\GAL-CHAT\\client\\Client.csproj": {}
+    "D:\\project\\th1nk2r\\gal-chat\\client\\Client.csproj": {}
   },
   "projects": {
-    "D:\\project\\th1nk2r\\GAL-CHAT\\client\\Client.csproj": {
+    "D:\\project\\th1nk2r\\gal-chat\\client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\project\\th1nk2r\\GAL-CHAT\\client\\Client.csproj",
+        "projectUniqueName": "D:\\project\\th1nk2r\\gal-chat\\client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "D:\\project\\th1nk2r\\GAL-CHAT\\client\\Client.csproj",
+        "projectPath": "D:\\project\\th1nk2r\\gal-chat\\client\\Client.csproj",
         "packagesPath": "C:\\Users\\th1nk2r\\.nuget\\packages\\",
         "outputPath": "D:\\project\\th1nk2r\\gal-chat\\client\\obj\\",
         "projectStyle": "PackageReference",

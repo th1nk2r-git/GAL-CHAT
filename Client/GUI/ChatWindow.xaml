@@ -54,7 +54,7 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <!-- 用户列表标题 -->
-                    <TextBlock Grid.Row="0" Text="在线用户" 
+                    <TextBlock Grid.Row="0" Text="好友列表" 
                                HorizontalAlignment="Center" VerticalAlignment="Center"
                                FontSize="16" FontWeight="Medium" Foreground="#333333"/>
                     <!-- 用户列表控件 -->

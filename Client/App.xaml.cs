@@ -51,12 +51,8 @@ namespace client
                     Client.Service.Dispatcher.Dispatch(packet);
                 }
             });
-            var chatWindow = new ChatWindow();
-            chatWindow.Show();
-            /*
             var loginWindow = new LoginWindow();
             loginWindow.Show();
-            */
         }
     }
 }

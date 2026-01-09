@@ -9,6 +9,8 @@ namespace Client.Service
 {
     static internal class Dispatcher
     {
+        static private String loginToken = "";
+
         static internal void Dispatch(dynamic packet)
         {
             string type = packet.GetProperty("type").GetString()!;
@@ -43,6 +45,7 @@ namespace Client.Service
         static private void HandleLoginSuccess(dynamic packet)
         {
             String message = packet.GetProperty("data").GetProperty("message").GetString()!;
+            loginToken = packet.GetProperty("data").GetProperty("token").GetString()!;
             Application.Current.Dispatcher.Invoke(() =>
             {
                 HandyControl.Controls.Growl.Success(
@@ -52,6 +55,10 @@ namespace Client.Service
                         WaitTime = 1,
                     }
                 );
+                LoginWindow loginWindow = Application.Current.Windows.OfType<LoginWindow>().FirstOrDefault()!;
+                var chatWindow = new ChatWindow();
+                loginWindow.Close();
+                chatWindow.Show();
             });
         }
 

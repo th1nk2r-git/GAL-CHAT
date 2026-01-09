@@ -12,14 +12,12 @@ using System.Windows.Shapes;
 
 namespace Client
 {
-    /// <summary>
-    /// ChatWindow.xaml 的交互逻辑
-    /// </summary>
     public partial class ChatWindow : Window
     {
         public ChatWindow()
         {
             InitializeComponent();
+
         }
 
     }

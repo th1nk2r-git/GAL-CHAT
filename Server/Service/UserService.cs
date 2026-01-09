@@ -7,15 +7,27 @@ using System.Text;
 
 namespace Server.Service
 {
-    static internal class UserService
+    internal class UserService
     {
+        // 生成随机字符串作为登录凭证
+        static internal String GenerateLoginToken(int length)
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var random = new Random();
+            var tokenChars = new char[length];
+            for (int i = 0; i < length; i++)
+            {
+                tokenChars[i] = chars[random.Next(chars.Length)];
+            }
+            return new string(tokenChars);
+        }
+
         // 处理用户登录请求
         static internal void HandleUserLogin(Socket client, dynamic packet)
         {
             var data = packet.GetProperty("data");
             String id = data.GetProperty("id").GetString()!;
             String password = data.GetProperty("password").GetString()!;
-
             Console.WriteLine($"Login attempt: ID={id}, Password={password}");
 
             var table = MysqlService.ExecuteDataTable(
@@ -30,12 +42,27 @@ namespace Server.Service
             if (table != null && table.Rows.Count > 0)
             {
                 Console.WriteLine("Login succeed");
+                var loginToken = ActiveUserManager.Instance.GetTokenByUserID(id);
+                if (loginToken == "")
+                {
+                    loginToken = GenerateLoginToken(32);
+                }
+
+                ActiveUserManager.Instance.AddUserSession(
+                    loginToken,
+                    id,
+                    DateTime.Now,
+                    client
+                );
+
                 var successResponse = new
                 {
                     type = "login",
                     status = "success",
+
                     data = new
                     {
+                        token = loginToken,
                         message = "登录成功"
                     }
                 };
@@ -134,6 +161,5 @@ namespace Server.Service
             };
             NetworkService.Send(client, successResponse);
         }
-
     }
 }

@@ -23,6 +23,7 @@ namespace Server.Service
         static internal void Send(Socket socket, dynamic packet)
         {
             String json = JsonSerializer.Serialize(packet, options);
+            Console.WriteLine("Sending packet: " + json);
             try
             {
                 byte[] data = Encoding.UTF8.GetBytes(json);
