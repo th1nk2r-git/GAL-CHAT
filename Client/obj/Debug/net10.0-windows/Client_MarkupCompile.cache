@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\project\th1nk2r\gal-chat\client\obj\Debug\net10.0-windows\
+D:\project\th1nk2r\GAL-CHAT\client\obj\Debug\net10.0-windows\
 Client
 none
 false
 TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-D:\project\th1nk2r\gal-chat\client\App.xaml
-2-1835976809
+D:\project\th1nk2r\GAL-CHAT\client\App.xaml
+32059249040
 
-7785103693
+880022369
 207616048230
-Window\LoginWindow.xaml;Window\RegisterWindow.xaml;
+GUI\ChatWindow.xaml;GUI\LoginWindow.xaml;GUI\RegisterWindow.xaml;
 
 False
 

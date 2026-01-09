@@ -1,26 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\project\\th1nk2r\\gal-chat\\",
+  "WorkspaceRootPath": "D:\\project\\th1nk2r\\GAL-CHAT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\service\\dispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\service\\dispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\gui\\chatwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\gui\\chatwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\window\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\window\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\gui\\chatwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\gui\\chatwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\window\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\window\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\gui\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\gui\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\window\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\window\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\window\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\window\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\gui\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\gui\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|d:\\project\\th1nk2r\\gal-chat\\client\\gui\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE7EEA74-2FE0-136F-D797-854FD87E022A}|client\\Client.csproj|solutionrelative:client\\gui\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,70 +38,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Dispatcher.cs",
-              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Client\\Service\\Dispatcher.cs",
-              "RelativeDocumentMoniker": "Client\\Service\\Dispatcher.cs",
-              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Client\\Service\\Dispatcher.cs",
-              "RelativeToolTip": "Client\\Service\\Dispatcher.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAkwGYAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T19:29:15.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Client\\Window\\LoginWindow.xaml",
-              "RelativeDocumentMoniker": "Client\\Window\\LoginWindow.xaml",
-              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Client\\Window\\LoginWindow.xaml",
-              "RelativeToolTip": "Client\\Window\\LoginWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-08T19:12:36.039Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Client\\Window\\LoginWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Client\\Window\\LoginWindow.xaml.cs",
-              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Client\\Window\\LoginWindow.xaml.cs",
-              "RelativeToolTip": "Client\\Window\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAQwCkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T19:12:45.473Z",
+              "Title": "ChatWindow.xaml",
+              "DocumentMoniker": "D:\\project\\th1nk2r\\GAL-CHAT\\Client\\GUI\\ChatWindow.xaml",
+              "RelativeDocumentMoniker": "Client\\GUI\\ChatWindow.xaml",
+              "ToolTip": "D:\\project\\th1nk2r\\GAL-CHAT\\Client\\GUI\\ChatWindow.xaml",
+              "RelativeToolTip": "Client\\GUI\\ChatWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-09T10:24:58.908Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegisterWindow.xaml",
-              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Client\\Window\\RegisterWindow.xaml",
-              "RelativeDocumentMoniker": "Client\\Window\\RegisterWindow.xaml",
-              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Client\\Window\\RegisterWindow.xaml",
-              "RelativeToolTip": "Client\\Window\\RegisterWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-07T08:30:02.864Z",
+              "DocumentIndex": 0,
+              "Title": "ChatWindow.xaml.cs",
+              "DocumentMoniker": "D:\\project\\th1nk2r\\GAL-CHAT\\client\\GUI\\ChatWindow.xaml.cs",
+              "RelativeDocumentMoniker": "client\\GUI\\ChatWindow.xaml.cs",
+              "ToolTip": "D:\\project\\th1nk2r\\GAL-CHAT\\client\\GUI\\ChatWindow.xaml.cs",
+              "RelativeToolTip": "client\\GUI\\ChatWindow.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAApwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T10:23:37.254Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RegisterWindow.xaml.cs",
-              "DocumentMoniker": "D:\\project\\th1nk2r\\gal-chat\\Client\\Window\\RegisterWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Client\\Window\\RegisterWindow.xaml.cs",
-              "ToolTip": "D:\\project\\th1nk2r\\gal-chat\\Client\\Window\\RegisterWindow.xaml.cs",
-              "RelativeToolTip": "Client\\Window\\RegisterWindow.xaml.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAowFUAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T19:12:48.524Z",
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "D:\\project\\th1nk2r\\GAL-CHAT\\Client\\GUI\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "Client\\GUI\\LoginWindow.xaml",
+              "ToolTip": "D:\\project\\th1nk2r\\GAL-CHAT\\Client\\GUI\\LoginWindow.xaml",
+              "RelativeToolTip": "Client\\GUI\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-09T09:44:39.397Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\project\\th1nk2r\\GAL-CHAT\\Client\\App.xaml",
+              "RelativeDocumentMoniker": "Client\\App.xaml",
+              "ToolTip": "D:\\project\\th1nk2r\\GAL-CHAT\\Client\\App.xaml",
+              "RelativeToolTip": "Client\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-09T09:44:09.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\project\\th1nk2r\\GAL-CHAT\\Client\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Client\\App.xaml.cs",
+              "ToolTip": "D:\\project\\th1nk2r\\GAL-CHAT\\Client\\App.xaml.cs",
+              "RelativeToolTip": "Client\\App.xaml.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAQwDUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T09:42:09.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "D:\\project\\th1nk2r\\GAL-CHAT\\Client\\GUI\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Client\\GUI\\LoginWindow.xaml.cs",
+              "ToolTip": "D:\\project\\th1nk2r\\GAL-CHAT\\Client\\GUI\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "Client\\GUI\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T09:41:58.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterWindow.xaml.cs",
+              "DocumentMoniker": "D:\\project\\th1nk2r\\GAL-CHAT\\Client\\GUI\\RegisterWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Client\\GUI\\RegisterWindow.xaml.cs",
+              "ToolTip": "D:\\project\\th1nk2r\\GAL-CHAT\\Client\\GUI\\RegisterWindow.xaml.cs",
+              "RelativeToolTip": "Client\\GUI\\RegisterWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T09:41:01.366Z"
             }
           ]
         }

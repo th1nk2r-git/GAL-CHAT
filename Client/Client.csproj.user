@@ -2,10 +2,13 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="Window\LoginWindow.xaml.cs">
+    <Compile Update="GUI\ChatWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Window\RegisterWindow.xaml.cs">
+    <Compile Update="GUI\LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GUI\RegisterWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
