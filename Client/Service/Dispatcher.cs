@@ -9,8 +9,6 @@ namespace Client.Service
 {
     static internal class Dispatcher
     {
-        static private String loginToken = "";
-
         static internal void Dispatch(dynamic packet)
         {
             string type = packet.GetProperty("type").GetString()!;
@@ -38,23 +36,34 @@ namespace Client.Service
                         HandleRegisterFailure(packet);
                     }
                     break;
+
+                case "message":
+                    HandleMessage(packet);
+                    break;
             }
+        }
+
+        // 处理收到的消息
+        static private void HandleMessage(dynamic packet)
+        {
+            string sender = packet.GetProperty("data").GetProperty("sender").GetString()!;
+            string content = packet.GetProperty("data").GetProperty("content").GetString()!;
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                ChatWindow chatWindow = Application.Current.Windows.OfType<ChatWindow>().FirstOrDefault()!;
+                chatWindow.AddMessage(sender, content, sender == UserInfo.Name);
+            });
         }
 
         // 处理登录成功响应
         static private void HandleLoginSuccess(dynamic packet)
         {
-            String message = packet.GetProperty("data").GetProperty("message").GetString()!;
-            loginToken = packet.GetProperty("data").GetProperty("token").GetString()!;
+            UserInfo.LoginToken = packet.GetProperty("data").GetProperty("token").GetString()!;
+            UserInfo.UserID = packet.GetProperty("data").GetProperty("id").GetString()!;
+            UserInfo.Name = packet.GetProperty("data").GetProperty("name").GetString()!;
+
             Application.Current.Dispatcher.Invoke(() =>
             {
-                HandyControl.Controls.Growl.Success(
-                    new GrowlInfo
-                    {
-                        Message = message,
-                        WaitTime = 1,
-                    }
-                );
                 LoginWindow loginWindow = Application.Current.Windows.OfType<LoginWindow>().FirstOrDefault()!;
                 var chatWindow = new ChatWindow();
                 loginWindow.Close();

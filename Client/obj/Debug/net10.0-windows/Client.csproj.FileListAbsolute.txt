@@ -27,3 +27,8 @@ D:\project\th1nk2r\gal-chat\client\obj\Debug\net10.0-windows\GUI\RegisterWindow.
 D:\project\th1nk2r\gal-chat\client\obj\Debug\net10.0-windows\GUI\ChatWindow.baml
 D:\project\th1nk2r\gal-chat\client\obj\Debug\net10.0-windows\GUI\LoginWindow.baml
 D:\project\th1nk2r\gal-chat\client\obj\Debug\net10.0-windows\GUI\RegisterWindow.baml
+D:\project\th1nk2r\gal-chat\client\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\project\th1nk2r\gal-chat\client\obj\Debug\net10.0-windows\GUI\AddFriendWindow.baml
+D:\project\th1nk2r\gal-chat\client\obj\Debug\net10.0-windows\GUI\AddGroupWindow.baml
+D:\project\th1nk2r\gal-chat\client\obj\Debug\net10.0-windows\GUI\AddFriendWindow.g.cs
+D:\project\th1nk2r\gal-chat\client\obj\Debug\net10.0-windows\GUI\AddGroupWindow.g.cs

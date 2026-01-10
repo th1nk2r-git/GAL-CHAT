@@ -63,6 +63,8 @@ namespace Server.Service
                     data = new
                     {
                         token = loginToken,
+                        id = table.Rows[0]["user_id"].ToString(),
+                        name = table.Rows[0]["user_name"].ToString(),
                         message = "登录成功"
                     }
                 };

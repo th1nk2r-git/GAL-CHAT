@@ -14,14 +14,24 @@ namespace Server.Service
         // 连接到Mysql数据库
         static internal void ConnectToDB(String host, String user, String database, String port, String password)
         {
-            string connectionString = $"server={host};user={user};database={database};port={port};password={password}";
-            connection = new MySqlConnection(connectionString);
-            connection.Open ();
+            // 连接Mysql数据库
+            try
+            {
+                string connectionString = $"server={host};user={user};database={database};port={port};password={password}";
+                connection = new MySqlConnection(connectionString);
+                connection.Open();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Failed to connect to Mysql: " + ex.Message);
+            }
+            Console.WriteLine("Connected to Mysql");
         }
 
         // 执行非查询SQL语句，返回受到影响的行数
         static internal int ExecuteNonQuery(string sql, params MySqlParameter[] parameters)
         {
+            ConnectToDB("180.160.173.240", "241310422", "GALCHAT", "3306", "241310422");
             try
             {
                 using (var command = new MySqlCommand(sql, connection))
@@ -43,6 +53,7 @@ namespace Server.Service
         // 执行查询SQL语句，返回标量值
         static internal object? ExecuteScalar(string sql, params MySqlParameter[] parameters)
         {
+            ConnectToDB("180.160.173.240", "241310422", "GALCHAT", "3306", "241310422");
             try
             {
                 using (MySqlCommand command = new MySqlCommand(sql, connection))
@@ -65,6 +76,7 @@ namespace Server.Service
         // 执行查询SQL语句，返回表格
         static internal DataTable ExecuteDataTable(string sql, params MySqlParameter[] parameters)
         {
+            ConnectToDB("180.160.173.240", "241310422", "GALCHAT", "3306", "241310422");
             var dataTable = new DataTable();
             try
             {

@@ -23,6 +23,10 @@ namespace Server.Service
                     UserService.HandleUserRegister(client, packet);
                     break;
 
+                case "search_user":
+                    SearchService.HandleSearchUser(client, packet);
+                    break;
+
                 case "get_friend_list":
 
                     break;

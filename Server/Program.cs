@@ -72,18 +72,6 @@ namespace Server
 
         static async Task Main()
         {
-            // 连接Mysql数据库
-            try
-            {
-                MysqlService.ConnectToDB("180.160.173.240", "241310422", "GALCHAT", "3306", "241310422");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Failed to connect to Mysql: " + ex.Message);
-                return;
-            }
-            Console.WriteLine("Connected to Mysql");
-
             // 启动服务器
             Socket socket = new(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             ushort port = 1234;
