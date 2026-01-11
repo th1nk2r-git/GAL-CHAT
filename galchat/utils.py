@@ -42,7 +42,7 @@ class Group(BaseModel):
 class ChatOption(BaseModel):
     """对话选项类"""
     content: str = Field(..., description="推荐用户发送的文本")
-    length: int = Field(..., description="该文本的长度")
+    emotion: str = Field(..., description="该文本的情感性质")
 
 
 class OptionList(BaseModel):
@@ -64,6 +64,11 @@ def get_length(*args: Iterable) -> int | tuple[int, ...] | ValueError:
     except ValueError as e:
         return e
 
-
-def get_now_time():
+def _get_now_time() -> str:
+    """获取当前时间"""
     return str(datetime.now())[:19]
+
+@tool
+def get_now_time() -> str:
+    """获取当前时间"""
+    return _get_now_time()

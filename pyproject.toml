@@ -5,7 +5,11 @@ description = "Chat Online like GalGame!"
 requires-python = ">=3.13"
 dependencies = [
     "dotenv>=0.9.9",
+    "fastapi>=0.128.0",
+    "httpx>=0.28.1",
     "langchain>=1.2.0",
     "langchain-deepseek>=1.0.1",
-    "pymysql>=1.1.2",
+    "tomli>=2.3.0",
+    "uvicorn>=0.40.0",
+    "websockets>=16.0",
 ]
