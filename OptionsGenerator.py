@@ -34,5 +34,6 @@ def main():
         options = generator.sql_generate(user_id, group_id, max_messages, set_datetime)
         print(options.model_dump())
 
+
 if __name__ == '__main__':
     sys.exit(main())

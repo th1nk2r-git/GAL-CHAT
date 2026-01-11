@@ -2,6 +2,14 @@ from pydantic import BaseModel, Field
 from datetime import datetime
 from typing import Optional, List, Iterable
 from langchain.tools import tool
+from galchat.llm import deepseek
+
+
+def get_model(model_name: str):
+    if model_name == "deepseek-chat":
+        return deepseek
+    # 默认模型
+    return deepseek
 
 
 class Message(BaseModel):
@@ -55,6 +63,7 @@ def get_length(*args: Iterable) -> int | tuple[int, ...] | ValueError:
         return tuple(len(i) for i in args)
     except ValueError as e:
         return e
+
 
 def get_now_time():
     return str(datetime.now())[:19]
